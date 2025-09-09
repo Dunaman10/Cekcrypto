@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import CoinContextProvider from "./context/CoinContextProvider.jsx";
+import icon from "./assets/icon.png";
+
+document.querySelector("link[rel='icon']").href = icon;
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
